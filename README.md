@@ -50,7 +50,7 @@ This is a MERN (MongoDB, Express.js, React, Node.js) stack implementation of a b
 Clone the project
 
 ```bash
-  git clone (https://github.com/ashish123256/rabse-blog-app)
+  git clone https://github.com/ashish123256/rabse-blog-app
 ```
 
 **For Client**
