@@ -32,7 +32,7 @@ const AdminDashboard = () => {
 
   const deleteBlog = async (id) => {
     try {
-      await axios.delete(`/api/v1/blogs/${id}`);
+      await axios.delete(`${baseUrl}/api/v1/blogs/${id}`);
       setBlogs(blogs.filter((blog) => blog._id !== id));
     } catch (err) {
       console.error(err);
@@ -41,7 +41,7 @@ const AdminDashboard = () => {
 
   const deleteUser = async (id) => {
     try {
-      await axios.delete(`/api/v1/users/${id}`);
+      await axios.delete(`${baseUrl}/api/v1/users/${id}`);
       setUsers(users.filter((user) => user._id !== id));
     } catch (err) {
       console.error(err);
