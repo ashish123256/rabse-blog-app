@@ -59,7 +59,7 @@ export const deleteUser = asyncHandler(async (req, res, next) => {
             message: "User not found",
         });
     }
-    await user.remove();
+    await user.deleteOne();
     res.status(200).json({
         success: true,
         data: {},
