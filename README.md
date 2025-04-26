@@ -6,33 +6,50 @@ This is a MERN (MongoDB, Express.js, React, Node.js) stack implementation of a b
 
 
 ## Features
-    User Authentication:
 
-        Registration with name, email, password, and role
+   🔐 Authentication
 
-        Login with email and password
+    Registration with name, email, password, and role
 
-        JWT-based authentication
+    Login with email and password
 
-        Protected routes
+    JWT-based authentication
 
-    Role-Based Access Control:
+    Protected routes for authenticated users
 
-        Admin role: Can create, edit, and delete blog posts; can manage users
+🛡️ Role-Based Access Control
 
-        User role: Can view blog posts
+    Admin: Can create, update, and delete blog posts; can view and manage users
 
-    Blog Management:
+    User: Can only view blog posts
 
-        Create, read, update, and delete blog posts (admin only)
+✍️ Blog Management
 
-        View all blog posts (all users)
+    Admin only:
 
-    User Management:
+        Create blog posts
 
-        View all users (admin only)
+        Edit blog posts
 
-        Delete users (admin only, cannot delete self)
+        Delete blog posts
+
+    All users:
+
+        View all blog posts
+
+👥 User Management (Admin Only)
+
+    View all registered users
+
+    Delete users (admin cannot delete their own account)
+
+🧑‍💼 Admin Dashboard
+
+    Accessible to users with the admin role
+
+    Allows blog creation, update, and deletion
+
+    Provides tools for managing users
 
 #Demo Video
 https://drive.google.com/file/d/1qMuxIBTkKskb2qoH-hcDupk_qPrnIabc/view?usp=sharing
