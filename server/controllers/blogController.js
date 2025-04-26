@@ -73,7 +73,7 @@ export const deleteBlog = asyncHandler(async (req, res,next) => {
             message: 'Not authorized to delete this blog'
         });
     }
-    await blog.remove();
+    await blog.deleteOne();
     res.status(200).json({
         success: true,
         data: {}
